@@ -4,7 +4,7 @@ tagline:     2D affine transforms
 version:     1.0
 ---
 
-v1.0 | Lua 5.1, Lua 5.2, LuaJIT 2
+v1.0
 
 ## `local matrix = require'affine2d'`
 
