@@ -33,3 +33,4 @@ category:    2D Graphics
 `mt1 * mt2 -> newmt`                                            Multiply two matrices and return the result as a new matrix.
 `mt1 == mt2`                                                    Test two matrices for equality. Matrices are considered equal when their fields are equal.
 --------------------------------------------------------------- --------------------------------------------------------------------------------------
+
