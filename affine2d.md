@@ -1,7 +1,7 @@
 ---
 project:     affine2d
 tagline:     2D affine transforms
-version:     1.0
+category:    2D Graphics
 ---
 
 v1.0
