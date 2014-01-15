@@ -1,7 +1,6 @@
 ---
 project:     affine2d
 tagline:     2D affine transforms
-category:    2D Graphics
 ---
 
 ## `local matrix = require'affine2d'`
