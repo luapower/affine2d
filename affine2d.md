@@ -1,6 +1,6 @@
 ---
-project:     affine2d
-tagline:     2D affine transforms
+project: affine2d
+tagline: 2D affine transforms
 ---
 
 ## `local matrix = require'affine2d'`
