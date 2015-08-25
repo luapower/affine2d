@@ -1,5 +1,4 @@
 ---
-project: affine2d
 tagline: 2D affine transforms
 ---
 
