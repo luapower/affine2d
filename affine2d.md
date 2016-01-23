@@ -4,6 +4,8 @@ tagline: 2D affine transforms
 
 ## `local matrix = require'affine2d'`
 
+## API
+
 --------------------------------------------------------------- ---------------------------------------------------------------
 `matrix(xx, yx, xy, yy, x0, y0) -> mt` <br> `matrix() -> mt`    Create a new matrix object. Defaults to identity matrix `1, 0, 0, 1, 0, 0`.
 
@@ -63,4 +65,3 @@ tagline: 2D affine transforms
 
 `mt1 == mt2`                                                    Test two matrices for equality. Matrices are considered equal when their fields are equal.
 --------------------------------------------------------------- ---------------------------------------------------------------
-

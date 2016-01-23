@@ -158,7 +158,7 @@ local function new(xx, yx, xy, yy, x0, y0)
 	end
 
 	function mt:scale_around(cx, cy, sx, sxy)
-		return mt:translate(cx, cy):scale(sx, sy):translate(cx, cy)
+		return mt:translate(cx, cy):scale(sx, sy):translate(-cx, -cy)
 	end
 
 	--check that the matrix is the identity matrix, thus having no effect.
