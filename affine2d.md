@@ -19,8 +19,12 @@ tagline: 2D affine transforms
 `mt:scalar_multilpy(s) -> mt`                                   Mulitply each field of the matrix with a scalar value.
 `mt:inverse() -> newmt`                                         Return the inverse matrix, or nothing if the matrix is not invertible.
 `mt:translate(x, y) -> mt`                                      Translate the matrix.
-`mt:scale(sx, sy) -> mt` <br> `mt:scale(s)`                     Scale the matrix.
+`mt:scale(sx, sy) -> mt` <br> \                                 Scale the matrix.
+`mt:scale(s)`
+`mt:scale_around(cx, cy, sx, sy) -> mt` <br> \                  Scale the matrix around a point.
+`mt:scale_around(cx, cy, s) -> mt`
 `mt:rotate(angle) -> mt`                                        Rotate the matrix. The angle is in degrees.
+`mt:rotate_around(cx, cy, angle) -> mt`                         Rotate the matrix around a point. The angle is in degrees.
 `mt:skew(angle_x, angle_y) -> mt`                               Skew the matrix. Angles are in degrees.
 `mt:is_identity() -> true | false`                              Check if the matrix is the identity matrix, thus having no effect on the input.
 `mt:has_unity_scale() -> true | false`                          Check that no scaling is done with this transform, only flipping and multiple-of-90-degree rotation.
