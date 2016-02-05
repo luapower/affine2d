@@ -7,7 +7,8 @@ tagline: 2D affine transforms
 ## API
 
 --------------------------------------------------------------- ---------------------------------------------------------------
-`matrix(xx, yx, xy, yy, x0, y0) -> mt` <br> `matrix() -> mt`    Create a new matrix object. Defaults to identity matrix `1, 0, 0, 1, 0, 0`.
+`matrix(xx, yx, xy, yy, x0, y0) -> mt` \                        Create a new matrix object. Defaults to identity matrix `1, 0, 0, 1, 0, 0`.
+`matrix() -> mt`
 
 `mt:set(xx, yx, xy, yy, x0, y0) -> mt`                          Set the matrix fields.
 
@@ -17,7 +18,8 @@ tagline: 2D affine transforms
 
 `mt:copy() -> newmt`                                            Create a new matrix object with the same fields as `mt`.
 
-`mt:transform_point(x, y) -> tx, ty` <br> `mt(x, y) -> tx, ty`  Transform a 2D point.
+`mt:transform_point(x, y) -> tx, ty` \                          Transform a 2D point.
+`mt(x, y) -> tx, ty`
 
 `mt:transform_distance(x, y) -> dx, dy`                         Transform a point ignoring translation.
 
@@ -35,19 +37,17 @@ tagline: 2D affine transforms
 
 `mt:translate(x, y) -> mt`                                      Translate the matrix.
 
-`mt:scale(sx, sy) -> mt` <br> \                                 Scale the matrix.
-
+`mt:scale(sx, sy) -> mt` \                                      Scale the matrix.
 `mt:scale(s)`
 
-`mt:scale_around(cx, cy, sx, sy) -> mt` <br> \                  Scale the matrix around a point.
-
+`mt:scale_around(cx, cy, sx, sy) -> mt` \                       Scale the matrix around a point.
 `mt:scale_around(cx, cy, s) -> mt`
 
-`mt:rotate(angle) -> mt`                                        Rotate the matrix. The angle is in degrees.
+`mt:rotate(angle) -> mt`                                        Rotate the matrix. The angle is in radians.
 
-`mt:rotate_around(cx, cy, angle) -> mt`                         Rotate the matrix around a point. The angle is in degrees.
+`mt:rotate_around(cx, cy, angle) -> mt`                         Rotate the matrix around a point. The angle is in radians.
 
-`mt:skew(angle_x, angle_y) -> mt`                               Skew the matrix. Angles are in degrees.
+`mt:skew(angle_x, angle_y) -> mt`                               Skew the matrix. Angles are in radians.
 
 `mt:is_identity() -> true | false`                              Check if the matrix is the identity matrix, thus having no effect on the input.
 
