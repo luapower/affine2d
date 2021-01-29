@@ -205,7 +205,7 @@ local function new(xx, yx, xy, yy, x0, y0)
 	end
 
 	local function __mul(a, b)
-		return copy():multiply(b:unpack())
+		return a:copy():multiply(b:unpack())
 	end
 
 	local function __eq(a, b)
